@@ -51,9 +51,9 @@ steps:
     do
       FROM_IMAGE="gcr.io/$PROJECT_ID/$image"
       TARGET_IMAGE="gcr.io/ml-pipeline/$image:$TAG_NAME"
-      docker pull $FROM_IMAGE
-      docker tag $FROM_IMAGE $TARGET_IMAGE
-      docker push $TARGET_IMAGE
+      docker pull ${FROM_IMAGE}
+      docker tag ${FROM_IMAGE} ${TARGET_IMAGE}
+      docker push ${TARGET_IMAGE}
     done
 
 # Pull and retag the images for the pipeline system
