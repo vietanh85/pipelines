@@ -49,7 +49,7 @@ steps:
     )
     for image in "${images[@]}"
     do
-      from_image="gcr.io/$PROJECT_ID/$image"
+      from_image="gcr.io/$PROJECT_ID/$image:$COMMIT_SHA"
       target_image="gcr.io/ml-pipeline/$image:$TAG_NAME"
       docker pull $from_image
       docker tag $from_image $target_image
