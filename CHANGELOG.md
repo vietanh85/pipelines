@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.0-rc.5](https://github.com/kubeflow/pipelines/compare/1.0.0-rc.4...1.0.0-rc.5) (2020-07-09)
+
+
+### Features
+
+* **sdk:** SDK - Deprecation warning when using ContainerOp ([\#4166](https://github.com/kubeflow/pipelines/issues/4166)) ([ebd62ec](https://github.com/kubeflow/pipelines/commit/ebd62ec61c2e99f048e3ea4271519ca3275fa0a4))
+
+
+### Bug Fixes
+
+* **cache:** cache-deployer should check both secret and config ([\#4186](https://github.com/kubeflow/pipelines/issues/4186)) ([7b3654b](https://github.com/kubeflow/pipelines/commit/7b3654b6fdfdb27e20d2688bad6bd783fb349468))
+* **cache:** Fix cache deployer not regenerating secrets when secret not present ([\#4171](https://github.com/kubeflow/pipelines/issues/4171)) ([d727c91](https://github.com/kubeflow/pipelines/commit/d727c91bdf3398cd7c26ab7545eaaa096628dc4a))
+* **deployment:** gcp managed storage - add service account to minio and cloudsql proxy deployments for workload identity ([\#4188](https://github.com/kubeflow/pipelines/issues/4188)) ([bd7f3c9](https://github.com/kubeflow/pipelines/commit/bd7f3c9cd60144aef953db7aa2a4b17cec1cfa73))
+
 ## [1.0.0-rc.4](https://github.com/kubeflow/pipelines/compare/1.0.0-rc.3...1.0.0-rc.4) (2020-07-08)
 
 
